@@ -9,6 +9,7 @@ const router = express.Router();   // we create a new router using express's inb
 
 // user registration / sign-up
 router.post("/sign-up", async (req, res) => {
+  console.log("peticion hecha")
   const {  name, email, password } = req.body;
 
   try {
